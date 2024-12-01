@@ -78,7 +78,6 @@ function ProfileHeader({ userDocs }) {
             </p>
           </div>
 
-          <h3 className="font-semibold">As a programmer</h3>
           <p>{userProfile?.bio}</p>
         </div>
       </div>

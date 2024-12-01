@@ -90,7 +90,7 @@ export default function GlobalState({ children }) {
 
   // ===========
 
-  // Login of new user
+  // User log in
 
   async function logIn(e) {
     e.preventDefault();

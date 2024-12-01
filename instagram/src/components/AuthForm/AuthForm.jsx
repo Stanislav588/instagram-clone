@@ -13,7 +13,7 @@ function AuthForm() {
 
   return (
     <div className="flex gap-5 bg-white text-black justify-center mt-[100px] items-center">
-      <div>
+      <div className="lg:block hidden">
         <img className="w-[100%]" src={authImg} />
       </div>
       <div>

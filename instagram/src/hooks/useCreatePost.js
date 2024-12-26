@@ -52,7 +52,7 @@ function useCreatePost() {
       setCreatePost((prev) => [newPost, ...prev]);
       enqueueSnackbar("Post created successfully!", { variant: "success" });
     } catch (error) {
-      console.log("Error of creating post");
+      enqueueSnackbar("Error of creating post", { variant: "error" });
     } finally {
       setIsLoading(false);
     }

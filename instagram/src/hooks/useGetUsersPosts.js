@@ -8,7 +8,6 @@ function useGetUsersPosts() {
   const [posts, setLocalPosts] = useState([]);
   const authProfile = useSelector((state) => state.auth.userProfile);
 
-  const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     if (!authProfile) {
       setLocalPosts([]);

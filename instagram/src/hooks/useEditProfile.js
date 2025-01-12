@@ -41,7 +41,6 @@ function useEditProfile() {
         variant: "success",
       });
       dispatch(setUserProfile(updatedUser));
-      setIsLoading(false);
     } catch (error) {
       console.log(error.message);
     } finally {

@@ -18,9 +18,8 @@ function useGetUserProfileHeader(username) {
         );
         const querySnap = await getDocs(q);
         if (querySnap.empty) {
-          // Dispatch an action indicating the user was not found
           dispatch(setUserProfile(null));
-          setUserDocs(null); // Set local state to null for easier checks in the component
+          setUserDocs(null);
           return;
         }
         let userDoc;
@@ -31,7 +30,6 @@ function useGetUserProfileHeader(username) {
         dispatch(setUserProfile(userDoc));
       } catch (error) {
         console.log("Error", error.message);
-      } finally {
       }
     }
     getData();

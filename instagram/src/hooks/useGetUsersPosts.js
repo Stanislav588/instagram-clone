@@ -11,7 +11,6 @@ function useGetUsersPosts() {
   const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     if (!authProfile) {
-      // If authProfile is not available, avoid making the query
       setLocalPosts([]);
       return;
     }

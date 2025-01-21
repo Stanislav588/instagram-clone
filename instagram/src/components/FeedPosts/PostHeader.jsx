@@ -1,6 +1,5 @@
 import React from "react";
 import { Avatar } from "@mui/material";
-import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import useFollowUsers from "../../hooks/useFollowUsers";
 import moment from "moment";
@@ -18,7 +17,7 @@ function PostHeader({ createdProfile }) {
           <p>{createdProfile?.username}</p>
         </Link>
 
-        <div className="ml-3 w-[80px] text-gray-400">{timeAgo}</div>
+        <div className="ml-3 text-gray-400">{timeAgo}</div>
       </div>
       <div>
         <button onClick={handleFollowUser} className="text-blue-500   text-md">

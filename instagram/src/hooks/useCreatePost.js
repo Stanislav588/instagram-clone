@@ -30,8 +30,8 @@ function useCreatePost() {
         createdBy: authUser.uid,
         createdAt: Date.now(),
       };
-      const postRef = await addDoc(collection(firestore, "posts"), newPost);
 
+      const postRef = await addDoc(collection(firestore, "posts"), newPost);
       // Update user data with new post ID
       const userRef = doc(firestore, "users", authUser.uid);
       await updateDoc(userRef, { posts: arrayUnion(postRef.id) });
@@ -47,8 +47,10 @@ function useCreatePost() {
       await updateDoc(postRef, { imageURL: downloadURL });
 
       // Add the download URL
-      newPost.imageURL = downloadURL;
+
       newPost.id = postRef.id;
+      newPost.imageURL = downloadURL;
+
       setCreatePost((prev) => [newPost, ...prev]);
       enqueueSnackbar("Post created successfully!", { variant: "success" });
     } catch (error) {

@@ -12,8 +12,7 @@ function Create() {
   const [caption, setCaption] = useState("");
   const ref = useRef(null);
   const { updateImg, handleUpdateImg, setUpdateImg } = useUpdateProfileImg();
-  const { handleCreatePost, createPostSuccessfully, setIsLoading, isLoading } =
-    useCreatePost();
+  const { handleCreatePost, isLoading } = useCreatePost();
 
   async function handleCreatingPost() {
     try {
@@ -55,7 +54,7 @@ function Create() {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="w-full sm:w-[90%] md:w-[500px] p-3 rounded-md bg-white block mx-auto mt-20"
+            className="w-full sm:w-[90%] md:w-[500px] p-3 rounded-md bg-white block"
           >
             <div className="flex items-center mb-4 justify-between">
               <h1 className="text-xl font-medium">Create post</h1>

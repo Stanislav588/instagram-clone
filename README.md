@@ -3,8 +3,10 @@
 A full-stack Instagram clone built with a focus on Firebase for backend services. This web application provides a variety of features to mimic the core functionalities of Instagram, including user interaction, profile management, and content sharing.
 
 ## Screenshots
+<div class="flex">
 <img src="https://github.com/Stanislav588/instagram-clone/blob/main/auth-page.png" width="500" />
 <img src="https://github.com/Stanislav588/instagram-clone/blob/main/main-page.png" width="500" />
+</div>
 
 ## Features
 

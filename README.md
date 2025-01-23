@@ -26,13 +26,15 @@ A full-stack Instagram clone built with a focus on Firebase for backend services
 
 ## Tech Stack
 
-- Frontend: React.js
+- Frontend: React.js, Context API
 
 - Backend: Firebase (Authentication, Firestore, Storage)
 
-- Styling: CSS / TailwindCSS (or any framework you use)
+- Styling: Tailwind CSS
 
-- State Management: Redux (if applicable)
+- State Management: Redux/Toolkit
+
+- Tools: Vite,Vercel
 
 ## Installation and setup
 

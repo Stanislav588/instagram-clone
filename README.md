@@ -5,8 +5,10 @@ A full-stack Instagram clone built with a focus on Firebase for backend services
 ## Screenshots
 #### Auth page
 <img src="https://github.com/Stanislav588/instagram-clone/blob/main/auth-page.png" width="400" />
+
 #### Main page
 <img src="https://github.com/Stanislav588/instagram-clone/blob/main/main-page.png" width="400" />
+
 #### Profile page
 <img src="https://github.com/Stanislav588/instagram-clone/blob/main/profile-page.png" width="400" />
     

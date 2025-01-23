@@ -3,7 +3,7 @@
 A fullstack instagram clone focusing on Firebase. Web site includes opportunity
 
 ## Screenshots
-<img src="https://github.com/Stanislav588/instagram-clone/blob/main/auth-page.png" width="200" />
+<img src="https://github.com/Stanislav588/instagram-clone/blob/main/auth-page.png" width="500" />
 
 ## Features
 

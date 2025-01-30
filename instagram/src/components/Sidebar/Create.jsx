@@ -54,7 +54,7 @@ function Create() {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="w-full sm:w-[90%] md:w-[500px] p-3 rounded-md bg-white block"
+            className="w-full sm:w-[90%] mx-auto md:w-[500px] p-3 rounded-md bg-white block"
           >
             <div className="flex items-center mb-4 justify-between">
               <h1 className="text-xl font-medium">Create post</h1>

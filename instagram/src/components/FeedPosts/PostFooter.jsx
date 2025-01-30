@@ -8,7 +8,7 @@ import usePostComment from "../../hooks/usePostComment";
 import { CircularProgress } from "@mui/material";
 import CommentsModal from "../Comment/CommentsModal";
 
-function PostFooter({ post, createdProfile }) {
+function PostFooter({ post }) {
   const { isLiked, likes, handleLikePost } = useLikePost(post);
   const [isOpenComments, setIsOpenComments] = useState(false);
   const [comment, setComment] = useState("");
@@ -42,7 +42,6 @@ function PostFooter({ post, createdProfile }) {
           <p className="select-none">{likes === 1 ? "like" : "likes"}</p>
         </div>
         <div className="flex gap-1">
-          {/* <span className="font-semibold ">{createdProfile?.username}</span> */}
           <p>{post?.caption}</p>
         </div>
         <p
